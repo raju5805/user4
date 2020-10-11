@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .active{
+            background-color:chartreuse
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar my-5 navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">N
+            <img src="/images/img-6.jpg" class="img-thumbnail" width="30"alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-white"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="AboutUs.html">AboutUs</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-primary mr-2" data-target="#login" data-toggle="modal" >SignUp</button>
+        <button class="btn btn-success" data-target="#log" data-toggle="modal">Login</button>
+
+        <!-- Modal SignUp page -->
+    </nav>
+        <div class="modal" id="login">
+            <div class="modal-dialog " >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">SignUp</h4>
+                        
+                        <button data-dismiss="modal" class="close">&times;</button>
+    
+                    </div>
+                        <div class="modal-body">
+                
+                        <form class="n1" novalidate>
+                            <div class="form-group">
+                            <label for="">UserName</label>
+                            <input class="form-control" placeholder="Enter your username"type="text" name="" id="" required>
+                            <small class="invalid-feedback">please enter 4 minimum character</small>
+                          </div>
+                            <div class="form-group">
+                            <label for="">Password</label>
+                            <input class="form-control" placeholder="Enter your password" type="pass" name="" id="" required>
+                            </div> 
+                            <div>
+                                <label class="form-check-label" for="">Gender</label>
+      
+                            <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="n1" id="">
+        <label class="form-check-label" for="">Male</label>
+     <input class="form-check-input" type="radio" name="" id="">
+    <label class="form-check-label" for="">Female</label>
+    </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="" id="">
+                                <label class="form-check-label">Terms and Conditions</label>
+    
+                            </div> 
+                            <div>
+                            <input type="submit" value="login">
+                          </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-dismiss="modal" class="close">Submit</button>
+                        <button class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    <!--  Modal Login page -->
+    <div class="modal" id="log">
+      <div class="modal-dialog modal-sm">
+      <div class="modal-content"> 
+              <div class="modal-header">
+                  <h4 class="modal-title">Login</h4>
+                  <button class="close"  data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <form class="n1" novalidate>
+                  <div class="form-group">
+                      <label for="user">username</label>
+                      <input class="form-control" type="text" value="" id="user" required>
+                 <small class="invalid-feedback">please enter the valid username</small>
+                  </div>
+
+
+                  <div class="form-group">
+                      <label for="password">Password</label>
+                      <input class="form-control" type="password" value="" id="" required>
+                  <small class="invalid-feedback">please enter the valid password</small>
+                  </div>
+                  <div>
+                      <input type="submit" value="login">
+                  </div>
+              </form>
+                  <div class="modal-footer">
+                      <button class="btn btn-primary" data-dismiss="modal">close</button>
+  
+              </form>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <script>
+        var f1=document.querySelector('.n1');
+        f1.addEventListener('submit' ,e=>{
+            if(f1.checkValidity()==false){
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            f1.classList.add('was-validated');
+        })
+    </script>
+
+      <!-- carousel -->
+      
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h5 class="display-2 text-primary">Our Website</h5>
+              <p>Our Future</p>
+            </div>
+            <img src="/images/img-5.jpg" class="d-block w-100" height="300px" alt="...">
+          </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <h5>Our Website</h5>
+                </div>
+    
+            <img src="/images/img-6.jpg" class="d-block w-100" height="300px"  alt="...">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h5>Our Website</h5>
+            </div>
+
+            <img src="/images/img-7.jpg" class="d-block w-100" height="300px" alt="...">
+          </div>
+        </div>
+        <h4 class="text-primary text-center">Our Website</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in dolorem aspernatur ipsam tempora possimus minus neque. Repellendus, ipsam molestias.</p>
+    
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  
+      <-----paragraph---->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque accusantium atque maiores possimus veritatis voluptatum? Atque dolores rerum, iste, magnam consectetur dolor cum impedit vel error dolorum eius qui et molestias obcaecati delectus unde repellendus a, repudiandae eligendi ex culpa odit. Sit corporis assumenda quaerat minima laborum, error deleniti, ipsam nam quae debitis officia recusandae quasi unde amet vel eum modi, sint magni quas sunt quo quibusdam voluptates omnis reiciendis. Reprehenderit nemo necessitatibus quis modi quaerat expedita, ex officia doloremque et, blanditiis ratione non fugiat quo aut sequi voluptatem perspiciatis tenetur delectus beatae natus. Omnis sapiente magnam, optio neque, incidunt laudantium quasi eaque fuga repudiandae officiis harum sed. Molestias, a eveniet! Praesentium, porro quaerat impedit quae minima culpa aspernatur nulla iste iure voluptatum ratione, hic voluptate sed amet ex vel dolor corrupti. Blanditiis earum ipsam magnam, tempora dicta maiores libero praesentium velit tempore consectetur a illum in, quisquam atque sit id perspiciatis dignissimos aperiam. Omnis alias maxime qui repellendus officia in quam pariatur rem illum ducimus? Accusamus nam, laudantium, cum a perferendis necessitatibus iste atque unde obcaecati corrupti magnam hic dolorum voluptate ad. Quaerat, voluptate dolore. Porro labore cumque totam, repellendus magni impedit, ipsum voluptates quaerat sequi amet odit aut.</p>
+      <div class="jumbotron my-5 bg-warning">
+        <div class="container my-5">
+          <h1 class="text-white text-center my-3" >Our Places</h1>
+          <div class="row">
+            <div class="col-md-4 my-4">
+              <div class="card">
+                <img src="/images/img-2.jpg" alt="">
+                <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore deserunt quae quam nesciunt eum error earum animi harum? Accusamus!</p>
+              </div>
+              </div>
+            </div>
+              <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="/images/img-8.jpg" alt="">
+
+                  <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quam eligendi animi, nihil velit nesciunt suscipit inventore excepturi praesentium sint!</p>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-4 my-4">
+                <div class="card">
+                  <div class="card-body">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni earum veritatis est tempora deleniti eaque sequi nulla eum cupiditate non.</p>
+                </div>
+                <img src="/images/img-7.jpg" alt="">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<script>
+var f1=document.querySelector('.n1')
+f1.addEventListener('submit',e=>{
+  if(f1.checkvalidity()==false){
+    e.preventDefault();
+    e.stopPropagation();
+  }
+  f1.classList.add('was-validate');
+})
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
